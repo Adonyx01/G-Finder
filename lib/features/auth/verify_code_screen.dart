@@ -35,7 +35,7 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
   Future<void> _verify() async {
     final code = _codeController.text.trim();
     if (code.length < 6) {
-      _showMessage('Saisissez le code à 6 chiffres reçu par e-mail.');
+      _showMessage('Saisissez le code reçu par e-mail.');
       return;
     }
     setState(() => _isLoading = true);
@@ -113,7 +113,7 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Saisissez le code à 6 chiffres envoyé à ${widget.email}.',
+                    'Saisissez le code envoyé à ${widget.email}.',
                     style: TextStyle(color: colors.textSecondary),
                   ),
                   const SizedBox(height: 24),
@@ -121,11 +121,11 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                     controller: _codeController,
                     keyboardType: TextInputType.number,
                     textAlign: TextAlign.center,
-                    maxLength: 6,
+                    maxLength: 10,
                     style: const TextStyle(
-                      fontSize: 28,
+                      fontSize: 26,
                       fontWeight: FontWeight.w700,
-                      letterSpacing: 8,
+                      letterSpacing: 6,
                     ),
                     inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                     decoration: const InputDecoration(
