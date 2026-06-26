@@ -1,9 +1,9 @@
-# ChezMoi · G-Finder
+# G-Finder
 
 > Application mobile de réservation de voyages au Gabon — hôtels, restaurants et activités.
 > Construite avec **Flutter** et **Supabase**.
 
-ChezMoi est une application façon Booking/Trivago, dédiée au Gabon. Les voyageurs
+G-Finder est une application façon Booking/Trivago, dédiée au Gabon. Les voyageurs
 parcourent et réservent des **hôtels**, **restaurants** et **activités** ; les
 **annonceurs** (professionnels) publient et gèrent leurs propres établissements,
 géolocalisés pour la fonction « à proximité ».
